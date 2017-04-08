@@ -44,7 +44,7 @@
     navigationBar.backgroundColor = [UIColor yellowColor];
     // 导航条的标题颜色:[navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
-    dictM[NSForegroundColorAttributeName] = [UIColor blueColor];
+    dictM[NSForegroundColorAttributeName] = [UIColor whiteColor];
     dictM[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     [navigationBar setTitleTextAttributes:dictM];
     // 导航栏背景图片
