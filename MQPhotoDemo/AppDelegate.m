@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MQHomeController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +17,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    MQHomeController * viewController= [[MQHomeController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    [self setupAppearance];
+    
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+
+    
     return YES;
+}
+
+-(void) setupAppearance{
+    
+    [UITabBar appearance].tintColor = [UIColor orangeColor];
+    UINavigationBar * navigationBar = [UINavigationBar appearance];
+    // 透明
+    navigationBar.translucent = NO;
+    // 导航栏颜色(透明时候会有透明效果)
+    navigationBar.barTintColor = [UIColor orangeColor];
+    // 导航栏背景色
+    navigationBar.backgroundColor = [UIColor yellowColor];
+    // 导航条的标题颜色:[navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
+    dictM[NSForegroundColorAttributeName] = [UIColor blueColor];
+    dictM[NSFontAttributeName] = [UIFont systemFontOfSize:20];
+    [navigationBar setTitleTextAttributes:dictM];
+    // 导航栏背景图片
+    [navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    // 导航栏阴影
+    navigationBar.shadowImage = [[UIImage alloc] init];
 }
 
 

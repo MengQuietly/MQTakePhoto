@@ -1,0 +1,18 @@
+//
+//  MQPhotoDemo.pch
+//  MQPhotoDemo
+//
+//  Created by mengmeng on 2017/4/8.
+//  Copyright © 2017年 mengmeng. All rights reserved.
+//
+
+#ifndef MQPhotoDemo_pch
+#define MQPhotoDemo_pch
+
+#import "UIView+Frame.h"
+
+#define APP_WIDTH UIScreen.mainScreen.bounds.size.width
+#define APP_HEIGHT UIScreen.mainScreen.bounds.size.height
+
+
+#endif /* MQPhotoDemo_pch */
