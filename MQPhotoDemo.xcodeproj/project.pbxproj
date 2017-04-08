@@ -13,11 +13,11 @@
 		00AC5AC91E97C7E000ED6DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AC5AC71E97C7E000ED6DB8 /* LaunchScreen.storyboard */; };
 		00AC5AD41E97C7E000ED6DB8 /* MQPhotoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5AD31E97C7E000ED6DB8 /* MQPhotoDemoTests.m */; };
 		00AC5ADF1E97C7E000ED6DB8 /* MQPhotoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ADE1E97C7E000ED6DB8 /* MQPhotoDemoUITests.m */; };
-		00AC5B511E99006D00ED6DB8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B501E99006D00ED6DB8 /* UIView+Frame.m */; };
 		00AC5B581E99177700ED6DB8 /* MQHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B571E99177700ED6DB8 /* MQHomeController.m */; };
 		00AC5B5F1E9917BE00ED6DB8 /* MQPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B5E1E9917BE00ED6DB8 /* MQPhotoController.m */; };
 		00AC5B621E99183800ED6DB8 /* MQTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B611E99183800ED6DB8 /* MQTakePhotoController.m */; };
 		00AC5B651E99188F00ED6DB8 /* MQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B641E99188F00ED6DB8 /* MQBaseViewController.m */; };
+		00AC5B681E991C0100ED6DB8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,6 @@
 		00AC5ADA1E97C7E000ED6DB8 /* MQPhotoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQPhotoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AC5ADE1E97C7E000ED6DB8 /* MQPhotoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQPhotoDemoUITests.m; sourceTree = "<group>"; };
 		00AC5AE01E97C7E000ED6DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00AC5B4F1E99006D00ED6DB8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "../../../../MQTool/MQTool/Tool/UIView+Frame.h"; sourceTree = "<group>"; };
-		00AC5B501E99006D00ED6DB8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "../../../../MQTool/MQTool/Tool/UIView+Frame.m"; sourceTree = "<group>"; };
 		00AC5B521E99009500ED6DB8 /* MQPhotoDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQPhotoDemo.pch; sourceTree = "<group>"; };
 		00AC5B561E99177700ED6DB8 /* MQHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQHomeController.h; sourceTree = "<group>"; };
 		00AC5B571E99177700ED6DB8 /* MQHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQHomeController.m; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		00AC5B611E99183800ED6DB8 /* MQTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTakePhotoController.m; sourceTree = "<group>"; };
 		00AC5B631E99188F00ED6DB8 /* MQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQBaseViewController.h; sourceTree = "<group>"; };
 		00AC5B641E99188F00ED6DB8 /* MQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQBaseViewController.m; sourceTree = "<group>"; };
+		00AC5B661E991C0100ED6DB8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +171,8 @@
 		00AC5AEE1E97C84E00ED6DB8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				00AC5B4F1E99006D00ED6DB8 /* UIView+Frame.h */,
-				00AC5B501E99006D00ED6DB8 /* UIView+Frame.m */,
+				00AC5B661E991C0100ED6DB8 /* UIView+Frame.h */,
+				00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -359,11 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AC5B681E991C0100ED6DB8 /* UIView+Frame.m in Sources */,
 				00AC5B651E99188F00ED6DB8 /* MQBaseViewController.m in Sources */,
 				00AC5B5F1E9917BE00ED6DB8 /* MQPhotoController.m in Sources */,
 				00AC5B621E99183800ED6DB8 /* MQTakePhotoController.m in Sources */,
 				00AC5B581E99177700ED6DB8 /* MQHomeController.m in Sources */,
-				00AC5B511E99006D00ED6DB8 /* UIView+Frame.m in Sources */,
 				00AC5ABE1E97C7E000ED6DB8 /* AppDelegate.m in Sources */,
 				00AC5ABB1E97C7E000ED6DB8 /* main.m in Sources */,
 			);
