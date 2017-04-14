@@ -48,7 +48,7 @@
     [super viewDidLoad];
  
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setupNavItem];
 }
 

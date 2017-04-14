@@ -8,6 +8,7 @@
 
 #import "MQHomeController.h"
 #import "MQTakePhotoController.h"
+#import "MQPhotosController.h"
 #import "MQPhotoController.h"
 
 @interface MQHomeController ()
@@ -30,8 +31,16 @@
     [takeBtn addTarget:self action:@selector(takeBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:takeBtn];
     
+    UIButton *photosBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    photosBtn.frame = CGRectMake(10, CGRectGetMaxY(takeBtn.frame)+15, 100, 44);
+    [photosBtn setTitle:@"photos" forState:UIControlStateNormal];
+    [photosBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    photosBtn.backgroundColor = [UIColor lightGrayColor];
+    [photosBtn addTarget:self action:@selector(photosBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:photosBtn];
+    
     UIButton *photoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    photoBtn.frame = CGRectMake(10, CGRectGetMaxY(takeBtn.frame)+15, 100, 44);
+    photoBtn.frame = CGRectMake(10, CGRectGetMaxY(photosBtn.frame)+15, 100, 44);
     [photoBtn setTitle:@"photo" forState:UIControlStateNormal];
     [photoBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     photoBtn.backgroundColor = [UIColor lightGrayColor];
@@ -44,7 +53,10 @@
     [self.navigationController pushViewController:takeVC animated:YES];
 }
 
-
+-(void) photosBtnClick{
+    MQPhotosController *photosVC = [[MQPhotosController alloc] init];
+    [self.navigationController pushViewController:photosVC animated:YES];
+}
 -(void) photoBtnClick{
     MQPhotoController *photoVC = [[MQPhotoController alloc] init];
     [self.navigationController pushViewController:photoVC animated:YES];

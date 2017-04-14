@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0028EEDE1E9B288300834F19 /* MQAuthorAccessTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028EEDD1E9B288300834F19 /* MQAuthorAccessTool.m */; };
+		0028EEEA1E9E174800834F19 /* MQAlertViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028EEE91E9E174800834F19 /* MQAlertViewTool.m */; };
+		0028EEED1E9E191200834F19 /* NSString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028EEEC1E9E191200834F19 /* NSString+AttributedString.m */; };
+		0028EEF31E9F7E1C00834F19 /* UIViewController+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028EEF21E9F7E1C00834F19 /* UIViewController+TopViewController.m */; };
+		0092B8BE1EA079E4002B8DCA /* MQPhotosGetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8BD1EA079E4002B8DCA /* MQPhotosGetTool.m */; };
 		00AC5ABB1E97C7E000ED6DB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ABA1E97C7E000ED6DB8 /* main.m */; };
 		00AC5ABE1E97C7E000ED6DB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ABD1E97C7E000ED6DB8 /* AppDelegate.m */; };
 		00AC5AC61E97C7E000ED6DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AC5AC51E97C7E000ED6DB8 /* Assets.xcassets */; };
@@ -18,6 +23,8 @@
 		00AC5B621E99183800ED6DB8 /* MQTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B611E99183800ED6DB8 /* MQTakePhotoController.m */; };
 		00AC5B651E99188F00ED6DB8 /* MQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B641E99188F00ED6DB8 /* MQBaseViewController.m */; };
 		00AC5B681E991C0100ED6DB8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */; };
+		00D41E171E99D245002DD2B6 /* MQPhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D41E161E99D245002DD2B6 /* MQPhotosController.m */; };
+		00D41E1A1E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D41E191E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0028EEDC1E9B288300834F19 /* MQAuthorAccessTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQAuthorAccessTool.h; sourceTree = "<group>"; };
+		0028EEDD1E9B288300834F19 /* MQAuthorAccessTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQAuthorAccessTool.m; sourceTree = "<group>"; };
+		0028EEE81E9E174800834F19 /* MQAlertViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQAlertViewTool.h; sourceTree = "<group>"; };
+		0028EEE91E9E174800834F19 /* MQAlertViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQAlertViewTool.m; sourceTree = "<group>"; };
+		0028EEEB1E9E191200834F19 /* NSString+AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedString.h"; sourceTree = "<group>"; };
+		0028EEEC1E9E191200834F19 /* NSString+AttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedString.m"; sourceTree = "<group>"; };
+		0028EEF11E9F7E1C00834F19 /* UIViewController+TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopViewController.h"; sourceTree = "<group>"; };
+		0028EEF21E9F7E1C00834F19 /* UIViewController+TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopViewController.m"; sourceTree = "<group>"; };
+		0092B8BC1EA079E4002B8DCA /* MQPhotosGetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotosGetTool.h; sourceTree = "<group>"; };
+		0092B8BD1EA079E4002B8DCA /* MQPhotosGetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotosGetTool.m; sourceTree = "<group>"; };
 		00AC5AB61E97C7E000ED6DB8 /* MQPhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQPhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AC5ABA1E97C7E000ED6DB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00AC5ABC1E97C7E000ED6DB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +79,10 @@
 		00AC5B641E99188F00ED6DB8 /* MQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQBaseViewController.m; sourceTree = "<group>"; };
 		00AC5B661E991C0100ED6DB8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		00D41E151E99D245002DD2B6 /* MQPhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotosController.h; sourceTree = "<group>"; };
+		00D41E161E99D245002DD2B6 /* MQPhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotosController.m; sourceTree = "<group>"; };
+		00D41E181E9A6FCD002DD2B6 /* MQPhotosAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotosAlbumModel.h; sourceTree = "<group>"; };
+		00D41E191E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotosAlbumModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +185,8 @@
 		00AC5AED1E97C84E00ED6DB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00D41E181E9A6FCD002DD2B6 /* MQPhotosAlbumModel.h */,
+				00D41E191E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,8 +194,18 @@
 		00AC5AEE1E97C84E00ED6DB8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				0028EEEB1E9E191200834F19 /* NSString+AttributedString.h */,
+				0028EEEC1E9E191200834F19 /* NSString+AttributedString.m */,
+				0028EEF11E9F7E1C00834F19 /* UIViewController+TopViewController.h */,
+				0028EEF21E9F7E1C00834F19 /* UIViewController+TopViewController.m */,
 				00AC5B661E991C0100ED6DB8 /* UIView+Frame.h */,
 				00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */,
+				0028EEDC1E9B288300834F19 /* MQAuthorAccessTool.h */,
+				0028EEDD1E9B288300834F19 /* MQAuthorAccessTool.m */,
+				0028EEE81E9E174800834F19 /* MQAlertViewTool.h */,
+				0028EEE91E9E174800834F19 /* MQAlertViewTool.m */,
+				0092B8BC1EA079E4002B8DCA /* MQPhotosGetTool.h */,
+				0092B8BD1EA079E4002B8DCA /* MQPhotosGetTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -219,6 +252,8 @@
 			children = (
 				00AC5B5D1E9917BE00ED6DB8 /* MQPhotoController.h */,
 				00AC5B5E1E9917BE00ED6DB8 /* MQPhotoController.m */,
+				00D41E151E99D245002DD2B6 /* MQPhotosController.h */,
+				00D41E161E99D245002DD2B6 /* MQPhotosController.m */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -361,10 +396,17 @@
 			files = (
 				00AC5B681E991C0100ED6DB8 /* UIView+Frame.m in Sources */,
 				00AC5B651E99188F00ED6DB8 /* MQBaseViewController.m in Sources */,
+				0028EEEA1E9E174800834F19 /* MQAlertViewTool.m in Sources */,
+				0028EEED1E9E191200834F19 /* NSString+AttributedString.m in Sources */,
+				00D41E1A1E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m in Sources */,
 				00AC5B5F1E9917BE00ED6DB8 /* MQPhotoController.m in Sources */,
 				00AC5B621E99183800ED6DB8 /* MQTakePhotoController.m in Sources */,
 				00AC5B581E99177700ED6DB8 /* MQHomeController.m in Sources */,
+				0028EEF31E9F7E1C00834F19 /* UIViewController+TopViewController.m in Sources */,
 				00AC5ABE1E97C7E000ED6DB8 /* AppDelegate.m in Sources */,
+				00D41E171E99D245002DD2B6 /* MQPhotosController.m in Sources */,
+				0092B8BE1EA079E4002B8DCA /* MQPhotosGetTool.m in Sources */,
+				0028EEDE1E9B288300834F19 /* MQAuthorAccessTool.m in Sources */,
 				00AC5ABB1E97C7E000ED6DB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
