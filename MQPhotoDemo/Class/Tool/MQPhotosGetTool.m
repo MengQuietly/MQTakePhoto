@@ -119,9 +119,15 @@
         // 添加 photosName、photo
         MQPhotosAlbumModel *photosAlbumModel = [[MQPhotosAlbumModel alloc] init];
         photosAlbumModel.photosAlumName =assetCollection.localizedTitle;
+        
+        NSLog(@"title = %@,%ld",assetCollection.localizedTitle,assetCollection.assetCollectionType);
+        
         photosAlbumModel.photosNum = fetchResult.count;
         photosAlbumModel.photoList = [imgList mutableCopy];
-        [tempList addObject:photosAlbumModel];
+        if (([assetCollection.localizedTitle isEqual:@"Videos"]) || ([assetCollection.localizedTitle isEqual:@"视频"])) {
+        }else{
+            [tempList addObject:photosAlbumModel];
+        }
     }
     return [tempList mutableCopy];
 }

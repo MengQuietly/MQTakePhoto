@@ -17,6 +17,8 @@
 		0092B8C71EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8C61EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m */; };
 		0092B8CD1EA0C6D9002B8DCA /* UIView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8CC1EA0C6D9002B8DCA /* UIView+RoundedCorners.m */; };
 		0092B8D01EA49738002B8DCA /* MQPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8CF1EA49738002B8DCA /* MQPictureModel.m */; };
+		0092B8D31EA4A900002B8DCA /* MQPictureChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8D21EA4A900002B8DCA /* MQPictureChooseController.m */; };
+		0092B8D61EA4AAA7002B8DCA /* MQPictureChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8D51EA4AAA7002B8DCA /* MQPictureChooseCell.m */; };
 		00AC5ABB1E97C7E000ED6DB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ABA1E97C7E000ED6DB8 /* main.m */; };
 		00AC5ABE1E97C7E000ED6DB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ABD1E97C7E000ED6DB8 /* AppDelegate.m */; };
 		00AC5AC61E97C7E000ED6DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AC5AC51E97C7E000ED6DB8 /* Assets.xcassets */; };
@@ -70,6 +72,10 @@
 		0092B8CC1EA0C6D9002B8DCA /* UIView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorners.m"; sourceTree = "<group>"; };
 		0092B8CE1EA49738002B8DCA /* MQPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPictureModel.h; sourceTree = "<group>"; };
 		0092B8CF1EA49738002B8DCA /* MQPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPictureModel.m; sourceTree = "<group>"; };
+		0092B8D11EA4A900002B8DCA /* MQPictureChooseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPictureChooseController.h; sourceTree = "<group>"; };
+		0092B8D21EA4A900002B8DCA /* MQPictureChooseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPictureChooseController.m; sourceTree = "<group>"; };
+		0092B8D41EA4AAA7002B8DCA /* MQPictureChooseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPictureChooseCell.h; sourceTree = "<group>"; };
+		0092B8D51EA4AAA7002B8DCA /* MQPictureChooseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPictureChooseCell.m; sourceTree = "<group>"; };
 		00AC5AB61E97C7E000ED6DB8 /* MQPhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQPhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AC5ABA1E97C7E000ED6DB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00AC5ABC1E97C7E000ED6DB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -236,6 +242,8 @@
 				0092B8C31EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m */,
 				0092B8C51EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.h */,
 				0092B8C61EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m */,
+				0092B8D41EA4AAA7002B8DCA /* MQPictureChooseCell.h */,
+				0092B8D51EA4AAA7002B8DCA /* MQPictureChooseCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +287,8 @@
 				00D41E161E99D245002DD2B6 /* MQPhotosController.m */,
 				0092B8BF1EA0A05C002B8DCA /* MQPhotoLibraryNameController.h */,
 				0092B8C01EA0A05C002B8DCA /* MQPhotoLibraryNameController.m */,
+				0092B8D11EA4A900002B8DCA /* MQPictureChooseController.h */,
+				0092B8D21EA4A900002B8DCA /* MQPictureChooseController.m */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -420,10 +430,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0092B8D01EA49738002B8DCA /* MQPictureModel.m in Sources */,
+				0092B8D31EA4A900002B8DCA /* MQPictureChooseController.m in Sources */,
 				00AC5B681E991C0100ED6DB8 /* UIView+Frame.m in Sources */,
 				0092B8C41EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m in Sources */,
 				00AC5B651E99188F00ED6DB8 /* MQBaseViewController.m in Sources */,
 				0092B8C11EA0A05C002B8DCA /* MQPhotoLibraryNameController.m in Sources */,
+				0092B8D61EA4AAA7002B8DCA /* MQPictureChooseCell.m in Sources */,
 				0028EEEA1E9E174800834F19 /* MQAlertViewTool.m in Sources */,
 				0028EEED1E9E191200834F19 /* NSString+AttributedString.m in Sources */,
 				00D41E1A1E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m in Sources */,

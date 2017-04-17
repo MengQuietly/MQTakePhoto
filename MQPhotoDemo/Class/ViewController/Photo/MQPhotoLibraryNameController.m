@@ -12,6 +12,9 @@
 #import "MQPhotosGetTool.h"
 #import "MQAlertViewTool.h"
 #import "MQPhotoLibraryWithColumnCell.h"
+#import "MQPhotosAlbumModel.h"
+#import "MQPictureChooseController.h"
+
 
 typedef NS_ENUM(NSInteger, MQSeeType) {
     MQSeeTypeLine = 0,
@@ -153,7 +156,12 @@ typedef NS_ENUM(NSInteger, MQSeeType) {
 //}
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    MQPhotosAlbumModel *photosModel = self.photoLibraryNameList[indexPath.item];
+    MQPictureChooseController *pictureChooseVC = [[MQPictureChooseController alloc] init];
+    pictureChooseVC.photosList = photosModel.photoList;
     NSLog(@"你选择了：%ld",indexPath.item);
+    [self.navigationController pushViewController:pictureChooseVC animated:YES];
 }
 
 @end
