@@ -37,7 +37,6 @@ PHImageRequestOptions图片请求选项
     [self getPhotosLibraryData];
 }
 
-
 #pragma mark - 获取数据
 -(void) getPhotosLibraryData {
     __weak typeof(self) weakSelf = self;

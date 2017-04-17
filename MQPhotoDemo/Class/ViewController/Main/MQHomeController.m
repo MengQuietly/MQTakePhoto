@@ -10,6 +10,7 @@
 #import "MQTakePhotoController.h"
 #import "MQPhotosController.h"
 #import "MQPhotoController.h"
+#import "MQPhotoLibraryNameController.h"
 
 @interface MQHomeController ()
 
@@ -54,7 +55,8 @@
 }
 
 -(void) photosBtnClick{
-    MQPhotosController *photosVC = [[MQPhotosController alloc] init];
+//    MQPhotosController *photosVC = [[MQPhotosController alloc] init];
+    MQPhotoLibraryNameController *photosVC = [[MQPhotoLibraryNameController alloc] init];
     [self.navigationController pushViewController:photosVC animated:YES];
 }
 -(void) photoBtnClick{

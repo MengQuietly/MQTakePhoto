@@ -12,6 +12,11 @@
 		0028EEED1E9E191200834F19 /* NSString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028EEEC1E9E191200834F19 /* NSString+AttributedString.m */; };
 		0028EEF31E9F7E1C00834F19 /* UIViewController+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028EEF21E9F7E1C00834F19 /* UIViewController+TopViewController.m */; };
 		0092B8BE1EA079E4002B8DCA /* MQPhotosGetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8BD1EA079E4002B8DCA /* MQPhotosGetTool.m */; };
+		0092B8C11EA0A05C002B8DCA /* MQPhotoLibraryNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8C01EA0A05C002B8DCA /* MQPhotoLibraryNameController.m */; };
+		0092B8C41EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8C31EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m */; };
+		0092B8C71EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8C61EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m */; };
+		0092B8CD1EA0C6D9002B8DCA /* UIView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8CC1EA0C6D9002B8DCA /* UIView+RoundedCorners.m */; };
+		0092B8D01EA49738002B8DCA /* MQPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092B8CF1EA49738002B8DCA /* MQPictureModel.m */; };
 		00AC5ABB1E97C7E000ED6DB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ABA1E97C7E000ED6DB8 /* main.m */; };
 		00AC5ABE1E97C7E000ED6DB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ABD1E97C7E000ED6DB8 /* AppDelegate.m */; };
 		00AC5AC61E97C7E000ED6DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AC5AC51E97C7E000ED6DB8 /* Assets.xcassets */; };
@@ -55,6 +60,16 @@
 		0028EEF21E9F7E1C00834F19 /* UIViewController+TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopViewController.m"; sourceTree = "<group>"; };
 		0092B8BC1EA079E4002B8DCA /* MQPhotosGetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotosGetTool.h; sourceTree = "<group>"; };
 		0092B8BD1EA079E4002B8DCA /* MQPhotosGetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotosGetTool.m; sourceTree = "<group>"; };
+		0092B8BF1EA0A05C002B8DCA /* MQPhotoLibraryNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotoLibraryNameController.h; sourceTree = "<group>"; };
+		0092B8C01EA0A05C002B8DCA /* MQPhotoLibraryNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotoLibraryNameController.m; sourceTree = "<group>"; };
+		0092B8C21EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotoLibraryNameCell.h; sourceTree = "<group>"; };
+		0092B8C31EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotoLibraryNameCell.m; sourceTree = "<group>"; };
+		0092B8C51EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPhotoLibraryWithColumnCell.h; sourceTree = "<group>"; };
+		0092B8C61EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPhotoLibraryWithColumnCell.m; sourceTree = "<group>"; };
+		0092B8CB1EA0C6D9002B8DCA /* UIView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorners.h"; sourceTree = "<group>"; };
+		0092B8CC1EA0C6D9002B8DCA /* UIView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorners.m"; sourceTree = "<group>"; };
+		0092B8CE1EA49738002B8DCA /* MQPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPictureModel.h; sourceTree = "<group>"; };
+		0092B8CF1EA49738002B8DCA /* MQPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPictureModel.m; sourceTree = "<group>"; };
 		00AC5AB61E97C7E000ED6DB8 /* MQPhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQPhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AC5ABA1E97C7E000ED6DB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00AC5ABC1E97C7E000ED6DB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +202,8 @@
 			children = (
 				00D41E181E9A6FCD002DD2B6 /* MQPhotosAlbumModel.h */,
 				00D41E191E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m */,
+				0092B8CE1EA49738002B8DCA /* MQPictureModel.h */,
+				0092B8CF1EA49738002B8DCA /* MQPictureModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +215,8 @@
 				0028EEEC1E9E191200834F19 /* NSString+AttributedString.m */,
 				0028EEF11E9F7E1C00834F19 /* UIViewController+TopViewController.h */,
 				0028EEF21E9F7E1C00834F19 /* UIViewController+TopViewController.m */,
+				0092B8CB1EA0C6D9002B8DCA /* UIView+RoundedCorners.h */,
+				0092B8CC1EA0C6D9002B8DCA /* UIView+RoundedCorners.m */,
 				00AC5B661E991C0100ED6DB8 /* UIView+Frame.h */,
 				00AC5B671E991C0100ED6DB8 /* UIView+Frame.m */,
 				0028EEDC1E9B288300834F19 /* MQAuthorAccessTool.h */,
@@ -213,6 +232,10 @@
 		00AC5AEF1E97C84E00ED6DB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0092B8C21EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.h */,
+				0092B8C31EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m */,
+				0092B8C51EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.h */,
+				0092B8C61EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +277,8 @@
 				00AC5B5E1E9917BE00ED6DB8 /* MQPhotoController.m */,
 				00D41E151E99D245002DD2B6 /* MQPhotosController.h */,
 				00D41E161E99D245002DD2B6 /* MQPhotosController.m */,
+				0092B8BF1EA0A05C002B8DCA /* MQPhotoLibraryNameController.h */,
+				0092B8C01EA0A05C002B8DCA /* MQPhotoLibraryNameController.m */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -394,8 +419,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0092B8D01EA49738002B8DCA /* MQPictureModel.m in Sources */,
 				00AC5B681E991C0100ED6DB8 /* UIView+Frame.m in Sources */,
+				0092B8C41EA0A5E9002B8DCA /* MQPhotoLibraryNameCell.m in Sources */,
 				00AC5B651E99188F00ED6DB8 /* MQBaseViewController.m in Sources */,
+				0092B8C11EA0A05C002B8DCA /* MQPhotoLibraryNameController.m in Sources */,
 				0028EEEA1E9E174800834F19 /* MQAlertViewTool.m in Sources */,
 				0028EEED1E9E191200834F19 /* NSString+AttributedString.m in Sources */,
 				00D41E1A1E9A6FCD002DD2B6 /* MQPhotosAlbumModel.m in Sources */,
@@ -405,6 +433,8 @@
 				0028EEF31E9F7E1C00834F19 /* UIViewController+TopViewController.m in Sources */,
 				00AC5ABE1E97C7E000ED6DB8 /* AppDelegate.m in Sources */,
 				00D41E171E99D245002DD2B6 /* MQPhotosController.m in Sources */,
+				0092B8CD1EA0C6D9002B8DCA /* UIView+RoundedCorners.m in Sources */,
+				0092B8C71EA0C33B002B8DCA /* MQPhotoLibraryWithColumnCell.m in Sources */,
 				0092B8BE1EA079E4002B8DCA /* MQPhotosGetTool.m in Sources */,
 				0028EEDE1E9B288300834F19 /* MQAuthorAccessTool.m in Sources */,
 				00AC5ABB1E97C7E000ED6DB8 /* main.m in Sources */,

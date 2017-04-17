@@ -16,5 +16,9 @@
 
 #define SYSTEM_VERSION [UIDevice.currentDevice.systemVersion floatValue]
 
+#define PADDINT_LEFT 15
+#define USE_WIDTH (APP_WIDTH - PADDINT_LEFT * 2)
+#define USE_HEIGHT (APP_HEIGHT - 64)
+
 
 #endif /* MQPhotoDemo_pch */

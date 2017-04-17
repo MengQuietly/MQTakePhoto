@@ -8,6 +8,7 @@
 
 #import "MQPhotosGetTool.h"
 #import "MQPhotosAlbumModel.h"
+#import "MQPictureModel.h"
 
 /*
  fetchAssetCollectionsWithType:
@@ -26,6 +27,23 @@
  SmartAlbumSlomoVideos: Slomo 是 slow motion 的缩写，高速摄影慢动作解析
  SmartAlbumUserLibrary: 相机相册，所有相机拍摄的照片或视频都会出现在该相册中，而且使用其他应用保存的照片也会出现在这里。
  Any //包含所有类型
+ 
+ // 列出所有相册智能相册
+ PHFetchResult *smartAlbumss = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+ NSLog(@"-----smartAlbumss----%ld",smartAlbumss.count);
+ 
+ // 列出所有用户创建的相册
+ PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
+ 
+ NSLog(@"-----topLevelUserCollections----%ld",topLevelUserCollections.count);
+ 
+ // 获取所有资源的集合，并按资源的创建时间排序
+ PHFetchOptions *options = [[PHFetchOptions alloc] init];
+ options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
+ PHFetchResult *assetsFetchResults = [PHAsset fetchAssetsWithOptions:options];
+ 
+ NSLog(@"-----assetsFetchResults----%ld",assetsFetchResults.count);
+ 
  */
 
 
@@ -45,7 +63,7 @@
     [MQPhotosGetTool enumerateAssetsInAssetCollectionWithFetchType:PHAssetCollectionTypeAlbum original:original confirm:^(NSArray *photoList) {
         [photosModelList addObjectsFromArray:photoList];
     }];
-
+    
     return [photosModelList mutableCopy];
 }
 
@@ -78,8 +96,22 @@
             CGSize size =  original?CGSizeMake(asset.pixelWidth, asset.pixelHeight):CGSizeZero;
             // 从asset中获得图片
             [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                if (result) {
-                    [imgList addObject:result];
+                
+                if ((result) && (asset.mediaType == PHAssetMediaTypeImage)) {
+                    
+                    MQPictureModel *pictureModel = [[MQPictureModel alloc] init];
+                    NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
+                    formatter.dateFormat = @"yyyy:MM:dd HH:mm:ss";
+                    formatter.timeZone = [NSTimeZone localTimeZone];
+                    NSString * pictureTime = [formatter stringFromDate:asset.creationDate];
+                    
+                    pictureModel.pictureDate = pictureTime;
+                    pictureModel.pictureImg = result;
+                    
+                    MQPictureModelType type = (asset.mediaType == PHAssetMediaTypeImage)? MQPictureModelTypeImage:((asset.mediaType == PHAssetMediaTypeAudio)?MQPictureModelTypeAudio:MQPictureModelTypeVideo);
+                    pictureModel.pictureType = type;
+                    
+                    [imgList addObject:pictureModel];
                 }
             }];
         }
